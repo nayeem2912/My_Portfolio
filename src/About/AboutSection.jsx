@@ -1,26 +1,33 @@
-import React from "react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="bg-gray-100 py-20 px-4">
-      <div className="max-w-5xl mx-auto" data-aos="fade-up">
-        <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 text-center">About Me</h2>
+    <section id="about" className=" bg-black text-white px-4 py-15">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        {/* Image */}
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <img
+            src="https://i.ibb.co/20Ch7mT9/4884785.jpg"
+            alt="Profile"
+            className="rounded-xl w-full max-w-md mx-auto border-4 border-orange-500 shadow-lg"
+          />
+        </div>
 
-        <p className="text-gray-700 text-lg leading-8 text-justify">
-          Hello! I'm <span className="font-semibold text-black">MD Omar Faruk Nayeem</span>, a passionate full-stack web developer from Bangladesh. My programming journey began with curiosity and a strong desire to build things that solve real-world problems. Over time, I mastered technologies like <span className="font-semibold text-black">React, Node.js, Express.js, Firebase</span>, and <span className="font-semibold text-black">MongoDB</span>, and I enjoy creating complete MERN-stack applications with responsive UIs and secure backend systems.
-        </p>
+        {/* Content */}
+        <div data-aos="fade-left" data-aos-duration="1000">
+          <h2 className="text-3xl font-bold text-orange-500 mb-4">About Me</h2>
+          <p className="text-lg leading-relaxed mb-4">
+            Hi! I'm <span className="text-orange-400 font-semibold">MD Omar Faruk Nayeem</span>, a passionate full-stack web developer with experience in building responsive and interactive websites using modern technologies like React, Node.js, Express, and MongoDB.
+          </p>
+          <p className="text-base mb-4">
+            My journey began with simple HTML and CSS, and now I enjoy working on full MERN stack projects. I love problem-solving and always enjoy learning new tools and frameworks.
+          </p>
+          <p className="text-base mb-4">
+            Outside of coding, I enjoy <span className="italic text-orange-400">football, traveling</span>. I’m always open to collaboration and building cool things together!
+          </p>
 
-        <p className="text-gray-700 text-lg leading-8 mt-4 text-justify">
-          I especially enjoy working on interactive frontend experiences, smooth user flows, and integrating real-time features using Firebase and MongoDB. Whether it’s a personal project, team collaboration, or freelance work—I love solving challenges with clean, scalable code.
-        </p>
-
-        <p className="text-gray-700 text-lg leading-8 mt-4 text-justify">
-          Outside of programming, I have a deep interest in exploring new places, watching football, and sometimes relaxing with music or painting. These hobbies help keep me refreshed and bring creativity to my work.
-        </p>
-
-        <p className="text-gray-700 text-lg leading-8 mt-4 text-justify">
-          I consider myself a consistent learner, team player, and someone who finds joy in helping others grow. I believe coding is not just about writing logic—it's about crafting experiences.
-        </p>
+          {/* Skills */}
+          
+        </div>
       </div>
     </section>
   );

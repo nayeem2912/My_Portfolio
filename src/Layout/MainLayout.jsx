@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import AOS from 'aos';
-import 'aos/dist/aos.css';;
-import Hero from '../Hero/Hero';
-import AboutSection from '../About/AboutSection';
+import 'aos/dist/aos.css';
+import { Outlet } from 'react-router';
 
 const MainLayout = () => {
     useEffect(() => {
@@ -12,8 +11,8 @@ const MainLayout = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Hero></Hero>
-            <AboutSection></AboutSection>
+            <Outlet></Outlet>
+            
         </div>
     );
 };
