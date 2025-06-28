@@ -3,6 +3,8 @@ import Navbar from '../Navbar/Navbar';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Outlet } from 'react-router';
+import Navbar2 from '../Navbar/Navbar2';
+import FooterSection from '../Footer/FooterSection';
 
 const MainLayout = () => {
     useEffect(() => {
@@ -10,8 +12,9 @@ const MainLayout = () => {
   }, []);
     return (
         <div>
-            <Navbar></Navbar>
+            <Navbar2></Navbar2>
             <Outlet></Outlet>
+            <FooterSection></FooterSection>
             
         </div>
     );

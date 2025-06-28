@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { FaDownload, FaBars, FaTimes } from "react-icons/fa";
 
@@ -5,10 +6,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", link: "#home" },
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Contact", link: "#contact" },
+    { id:1 ,name: "Home", link: "#home" },
+    { id:2, name: "About", link: "#about" },
+    { id:3, name: "Projects", link: "#projects" },
+    { id:4, name: "Contact", link: "#contact" },
   ];
 
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
             <a
-              key={item.name}
+              key={item.id}
               href={item.link}
               className="hover:text-orange-500 transition-all duration-300"
             >
@@ -38,7 +39,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Hamburger Icon */}
+        {/* Mobile Hamburger Icon
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -46,18 +47,18 @@ const Navbar = () => {
           >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
-        </div>
-      </div>
+        </div>*/}
+      </div> 
 
       {/* Mobile Dropdown */}
-      {isOpen && (
+       {isOpen && (
         <div className="md:hidden flex justify-end px-4">
-          <div className="relative mt-2">
-            {/* Dropdown Arrow */}
+           <div className="relative mt-2"> 
+            
             <div className="absolute -top-2 right-4 w-3 h-3 rotate-45 bg-black z-[-1]"></div>
 
-            {/* Dropdown Menu */}
-            <div className="bg-black py-4 space-y-3 shadow-md w-60 rounded-lg text-center border border-orange-500 z-50">
+           
+            <div className="bg-black py-4 space-y-3 shadow-md w-25 rounded-lg text-center border border-orange-500 z-50">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -69,10 +70,12 @@ const Navbar = () => {
                 </a>
               ))}
             </div>
-          </div>
+          </div> 
+           
         </div>
-      )}
+      )} 
     </nav>
+    
   );
 };
 

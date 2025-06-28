@@ -1,22 +1,32 @@
-import { useState } from "react";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
 
 
 const ContactSection = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!email || !message) {
-      toast("📩 Please fill in both fields.");
-      return;
-    }
-
-    toast("✅ Thank you! We’ll contact you soon.");
-    setEmail("");
-    setMessage("");
+    emailjs
+      .sendForm(
+        "service_bzie3sm", // 🔁 Replace this
+        "template_85a2y3a", // 🔁 Replace this
+        form.current,
+        "f8y0FyQ0P63ZWmKB_" // 🔁 Replace this
+      )
+      .then(
+        (result) => {
+          toast("✅ Message sent successfully!", result.text);
+          form.current.reset();
+         
+        },
+        (error) => {
+          toast("❌ Failed to send message.", error.text);
+          
+        }
+      );
   };
 
   return (
@@ -26,35 +36,41 @@ const ContactSection = () => {
           Contact
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Contact Information */}
-          <div className="bg-gray-900 p-6 rounded-lg shadow-md text-white space-y-3">
-            <h3 className="text-xl font-semibold text-orange-400">
+          {/* Left - Contact Information */}
+          <div className="bg-gray-900 p-6 rounded-lg shadow-md text-white">
+            <h3 className="text-xl font-semibold mb-4 text-orange-400">
               Contact Information
             </h3>
-            <p>📧 Email: <span className="text-orange-300">omarnayeem32@gmail.com</span></p>
-            <p>📞 Phone / 💬 WhatsApp: <span className="text-orange-300">+8801575162723</span></p>
+            <p className="mb-2">
+              📧 Email:{" "}
+              <span className="text-orange-300">omarnayeem32@gmail.com</span>
+            </p>
+            <p className="mb-2">
+              📞 Phone/💬 WhatsApp: <span className="text-orange-300">01575162723</span>
+            </p>
+            
           </div>
 
-          {/* Contact Form */}
+          {/* Right - Contact Form */}
           <div className="bg-gray-900 p-6 rounded-lg shadow-md text-white">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                name="user_email"
                 placeholder="Your Email"
+                required
                 className="w-full p-3 rounded bg-gray-800 text-white focus:outline-orange-400"
               />
               <textarea
                 rows="5"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                name="message"
                 placeholder="Your Message"
+                required
                 className="w-full p-3 rounded bg-gray-800 text-white focus:outline-orange-400"
               ></textarea>
               <button
                 type="submit"
-                className="bg-orange-500 hover:bg-orange-600 transition duration-200 text-black font-semibold py-2 px-4 rounded w-full"
+                className="bg-orange-500 hover:bg-orange-600 text-black font-semibold py-2 px-4 rounded w-full"
               >
                 Send Message
               </button>

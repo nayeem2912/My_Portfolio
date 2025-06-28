@@ -31,7 +31,7 @@ const HeroSection = () => {
             <a href="https://github.com/nayeem2912" target="_blank" rel="noreferrer">
               <FaGithub className="text-2xl hover:text-orange-500" />
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="https://bd.linkedin.com/" target="_blank" rel="noreferrer">
               <FaLinkedin className="text-2xl hover:text-orange-500" />
             </a>
             <a href="mailto:omarnayeem32@gmail.com">
