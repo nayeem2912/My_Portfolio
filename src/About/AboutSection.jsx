@@ -4,7 +4,7 @@ const AboutSection = () => {
     <section id="about" className=" bg-black text-white px-4 py-15">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Image */}
-        <div data-aos="fade-right" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="1000">
           <img
             src="https://i.ibb.co/20Ch7mT9/4884785.jpg"
             alt="Profile"
@@ -13,7 +13,7 @@ const AboutSection = () => {
         </div>
 
         {/* Content */}
-        <div data-aos="fade-left" data-aos-duration="1000">
+        <div data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-3xl font-bold text-orange-500 mb-4">About Me</h2>
           <p className="text-lg leading-relaxed mb-4">
             Hi! I'm <span className="text-orange-400 font-semibold">MD Omar Faruk Nayeem</span>, a passionate full-stack web developer with experience in building responsive and interactive websites using modern technologies like React, Node.js, Express, and MongoDB.
