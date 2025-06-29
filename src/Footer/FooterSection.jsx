@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaArrowUp, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const FooterSection = () => {
   const scrollToTop = () => {
@@ -31,6 +31,20 @@ const FooterSection = () => {
             className="hover:text-white transition"
           >
             <FaLinkedin />
+          </a>
+          <a
+            href="https://wa.me/8801575162723"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition"
+          >
+            <FaWhatsapp />
+          </a>
+          <a
+            href="mailto:omarnayeem32@gmail.com"
+            className="hover:text-white transition"
+          >
+            <FaEnvelope />
           </a>
         </div>
 
