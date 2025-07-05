@@ -1,21 +1,21 @@
 const educationData = [
   {
-    degree: "Bachelor of Science in Zoology",
+    degree: "Bachelor of Science",
     institution: "National University (2nd Year)",
     year: "2023 - Present",
     details:
-      "Currently pursuing B.Sc in Zoology under the National University. Studying various aspects of animal biology, ecology, and physiology.",
+      "Currently pursuing B.Sc under the National University.",
   },
   {
     degree: "Higher Secondary Certificate (HSC)",
-    institution: "Comilla Govt City College",
+    institution: "Comilla Govt City College, Comilla.",
     year: "2022",
     details:
       "Completed HSC from Science group with GPA 5.00.",
   },
   {
     degree: "Secondary School Certificate (SSC)",
-    institution: "Comilla Modern High School",
+    institution: "Comilla Modern High School, Comilla.",
     year: "2020",
     details:
       "Achieved GPA 5.00. Strong foundation in mathematics, general science.",

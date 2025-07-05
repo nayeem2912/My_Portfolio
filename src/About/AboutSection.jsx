@@ -16,7 +16,7 @@ const AboutSection = () => {
         <div data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-3xl font-bold text-orange-500 mb-4">About Me</h2>
           <p className="text-lg leading-relaxed mb-4">
-            Hi! I'm <span className="text-orange-400 font-semibold">MD Omar Faruk Nayeem</span>, a passionate full-stack web developer with experience in building responsive and interactive websites using modern technologies like React, Node.js, Express, and MongoDB.
+            Hi! I'm <span className="text-orange-400 font-semibold">MD Omar Faruk Nayeem</span>, a passionate MERN-Stack web developer with experience in building responsive and interactive websites using modern technologies like React, Node.js, Express, and MongoDB.
           </p>
           <p className="text-base mb-4">
             My journey began with simple HTML and CSS, and now I enjoy working on full MERN stack projects. I love problem-solving and always enjoy learning new tools and frameworks.

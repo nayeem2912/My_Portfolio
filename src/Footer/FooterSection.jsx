@@ -25,7 +25,7 @@ const FooterSection = () => {
             <FaGithub />
           </a>
           <a
-            href="https://bd.linkedin.com/"
+            href="https://www.linkedin.com/in/md-omar-faruk-nayeem-489a11372/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"

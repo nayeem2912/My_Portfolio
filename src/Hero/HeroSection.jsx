@@ -23,7 +23,7 @@ const HeroSection = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            Full Stack Developer
+            MERN-Stack Developer
           </h2>
 
           {/* Social Icons */}
@@ -31,7 +31,7 @@ const HeroSection = () => {
             <a href="https://github.com/nayeem2912" target="_blank" rel="noreferrer">
               <FaGithub className="text-2xl hover:text-orange-500" />
             </a>
-            <a href="https://bd.linkedin.com/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/md-omar-faruk-nayeem-489a11372/" target="_blank" rel="noreferrer">
               <FaLinkedin className="text-2xl hover:text-orange-500" />
             </a>
             <a href="mailto:omarnayeem32@gmail.com">
@@ -42,7 +42,7 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="mt-6" data-aos="fade-up" data-aos-delay="500">
   <a
-    href="/resume.pdf"
+    href="https://drive.google.com/file/d/1PTrkzbZ07xjsTkDDHak6DLalMUvJcvTj/view?usp=drive_link"
     download
     className="inline-flex items-center gap-2 px-6 py-2 border border-orange-500 rounded-md text-white hover:bg-orange-600 hover:text-white transition duration-300 w-auto"
   >

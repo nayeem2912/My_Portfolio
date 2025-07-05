@@ -48,7 +48,7 @@ const Navbar2 = () => {
   </div>
   <div className="navbar-end">
     <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1PTrkzbZ07xjsTkDDHak6DLalMUvJcvTj/view?usp=drive_link"
                 download
                 className="inline-flex items-center gap-2 btn btn-xs sm:btn-sm md:btn-md  bg-orange-500 border-none text-black rounded-md hover:bg-orange-600 transition"
               >
