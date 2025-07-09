@@ -60,6 +60,7 @@ const ProjectCard = ({ project }) => {
       className="bg-gray-900 rounded-xl p-6 shadow-md hover:shadow-orange-500 transition duration-300 max-w-5xl mx-auto mb-12"
       data-aos="fade-up"
     >
+      
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
         {/* Image Section */}
         <img
@@ -131,6 +132,9 @@ const ProjectCard = ({ project }) => {
 const ProjectsSection = () => {
   return (
     <section id="projects" className="bg-black py-16 px-4 text-white">
+      <h2 className="text-3xl font-bold text-orange-500 mb-12 text-center">
+          Projects
+        </h2>
       <div className="max-w-7xl mx-auto space-y-12">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
