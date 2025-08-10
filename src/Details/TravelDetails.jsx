@@ -16,10 +16,10 @@ const TravelDetails = () => {
         />
 
         <p className="mb-6 text-gray-300 leading-relaxed">
-          <span className="font-semibold text-orange-400">Travel Mania</span> is a full-stack tour package booking portal built with the MERN Stack and integrated with Firebase Authentication. It allows users to explore travel destinations, view detailed itineraries, and book their ideal trips in real-time.
+          <span className="font-semibold text-orange-500">Travel Mania</span> is a full-stack tour package booking portal built with the MERN Stack and integrated with Firebase Authentication. It allows users to explore travel destinations, view detailed itineraries, and book their ideal trips in real-time.
         </p>
 
-        <h3 className="text-xl font-semibold text-orange-400 mb-2">Key Features:</h3>
+        <h3 className="text-xl font-semibold text-orange-500 mb-2">Key Features:</h3>
         <ul className="list-disc list-inside text-gray-300 space-y-1 mb-6">
           <li><span className="font-semibold ">🧳 Explore Tour Packages with high-quality visuals and summaries</span></li>
           <li><span className="font-semibold ">📅 View Detailed Itineraries for each package</span> </li>
@@ -29,12 +29,28 @@ const TravelDetails = () => {
           
         </ul>
 
-        <h3 className="text-xl font-semibold text-orange-400 mb-2">Tech Stack:</h3>
+         <h3 className="text-xl font-semibold text-orange-500 mb-2">Challenges Faced:</h3>
+        <ul className="list-disc list-inside text-gray-300 space-y-1 mb-6">
+          <li><span className="font-semibold ">Handling real-time search and sorting for packages efficiently.</span></li>
+          <li><span className="font-semibold ">Designing a blog section that’s visually appealing and easy to navigate.</span> </li>
+          <li><span className="font-semibold ">Ensuring a consistent user experience across multiple devices.</span></li>
+          
+        </ul>
+
+        <h3 className="text-xl font-semibold text-orange-500 mb-2">Potential Improvements & Future Plans:</h3>
+        <ul className="list-disc list-inside text-gray-300 space-y-1 mb-6">
+          <li><span className="font-semibold ">Integrate payment gateways for direct booking.</span></li>
+          <li><span className="font-semibold ">Add a user dashboard for tracking bookings.</span> </li>
+          <li><span className="font-semibold ">Implement live chat support for instant customer queries.</span></li>
+          
+        </ul>
+
+        <h3 className="text-xl font-semibold text-orange-500 mb-2">Tech Stack:</h3>
         <div className="flex flex-wrap gap-2 mb-8">
           {["React", "Tailwind CSS", "Firebase", "MongoDB", "Express.js"].map((tech, i) => (
             <span
               key={i}
-              className="bg-orange-400 text-black text-xs font-semibold px-3 py-1 rounded-full"
+              className="bg-orange-600 text-black text-xs font-semibold px-3 py-1 rounded-full"
             >
               {tech}
             </span>
@@ -45,27 +61,14 @@ const TravelDetails = () => {
           <a
             href="https://travel-mania-nayeem129.netlify.app/"
             target="_blank"
-            className="bg-green-500 hover:bg-green-600 text-white font-medium px-4 py-2 rounded"
+            className="bg-orange-600 text-black font-medium px-4 py-2 rounded"
           >
             🔗 Live Site
           </a>
-          <a
-            href="https://github.com/nayeem2912/Travel_Mania_Client"
-            target="_blank"
-            className="bg-gray-800 hover:bg-gray-900 text-white font-medium px-4 py-2 rounded"
-          >
-            💻 Frontend Code
-          </a>
-          <a
-            href="https://github.com/nayeem2912/Travel_Mania_Server"
-            target="_blank"
-            className="bg-gray-800 hover:bg-gray-900 text-white font-medium px-4 py-2 rounded"
-          >
-            💻 Backend Code
-          </a>
+        
           <Link to='/'>
           <button
-            className="bg-orange-400 text-black  font-medium px-4 py-2 rounded"
+            className="bg-orange-600 text-black  font-medium px-4 py-2 rounded"
           >
             Back to home
           </button>

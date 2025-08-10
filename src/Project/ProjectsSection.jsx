@@ -35,22 +35,23 @@ const projects = [
     liveLink: "https://travel-mania-nayeem129.netlify.app/", 
     frontLink: "https://github.com/nayeem2912/Travel_Mania_Client",
     backLink: "https://github.com/nayeem2912/Travel_Mania_Server",
-    image: "https://i.ibb.co/d0YBKFPQ/Screenshot-2025-06-28-140941.png",
+    image: '../../rsz_screenshot_2025-06-28_140941.jpg',
   },
   {
     id: 3,
-    title: "English Janala",
+    title: "SecureLife",
     description:
-      "An interactive bilingual platform that helps Bengali speakers learn English vocabulary and programming basics with clear examples and simple explanations. Perfect for students and self-learners seeking easy and effective study.",
+      "SecureLife is a full-stack web application designed to streamline life insurance policy management for customers, agents, and admins. It offers secure user authentication, easy policy browsing, and automated claim processing, making the insurance experience fast, transparent, and hassle-free.",
     features: [
-      "Bilingual lessons to learn English vocabulary with meanings and examples.",
-      "Simple explanations of common programming concepts and FAQs.",
-      "Interactive and user-friendly interface for effective learning.",
+      "Role-Based Dashboards – Separate portals for Customers, Agents, and Admins with tailored features.",
+      "Secure Transactions – Integrated Stripe payment system with transaction tracking.",
+      "Policy & Claim Management – Apply for policies, track claim requests, and manage approvals in real time.",
     ],
-    techStack: ["JavaScript (Vanilla JS)", "HTML5", "CSS3"],
-    liveLink: "https://nayeem-assignment-6.netlify.app/", 
-    frontLink: "https://github.com/nayeem2912/English_Janala",
-    image: "https://i.ibb.co/tMMj80dQ/Screenshot-2025-06-28-210105.png",
+    techStack: ["React", "Node.js","Tailwind","MongoDB", "Express", "Firebase","Stripe"],
+    liveLink: "https://secure-life-2912.netlify.app/", 
+    frontLink: "https://github.com/nayeem2912/SecureLife_client_side",
+    backLink: "https://github.com/nayeem2912/SecureLife_server_side",
+    image: "../../Screenshot 2025-08-10 210153.png",
   },
 ];
 
@@ -66,7 +67,7 @@ const ProjectCard = ({ project }) => {
         <img
           src={project.image}
           alt={project.title}
-           className="w-full md:w-3/5 h-96 object-cover rounded-lg"
+           className="w-full md:w-3/5 h-96 object-contain rounded-lg"
         />
 
         {/* Details Section */}
@@ -84,7 +85,7 @@ const ProjectCard = ({ project }) => {
             {project.techStack.map((tech, i) => (
               <span
                 key={i}
-                className="bg-orange-400 text-black text-xs px-3 py-1 rounded-full"
+                className="bg-orange-600 text-black text-xs px-3 font-medium py-1 rounded-full"
               >
                 {tech}
               </span>
@@ -96,7 +97,7 @@ const ProjectCard = ({ project }) => {
               href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2 rounded"
+              className="bg-orange-600 font-medium text-sm px-4 py-2 rounded text-black"
             >
               Live
             </a>

@@ -6,6 +6,7 @@ import Home from "../Home";
 import PlantCareDetails from "../Details/PlantCareDetails";
 import TravelDetails from "../Details/TravelDetails";
 import EnglishJanala from "../Details/EnglishJanala";
+import SecureLife from "../Details/SecureLife";
 
  export const router = createBrowserRouter([
   {
@@ -30,6 +31,6 @@ import EnglishJanala from "../Details/EnglishJanala";
       },
   {
         path:'/projects/3',
-        Component: EnglishJanala
+        Component: SecureLife
       },
 ]);
