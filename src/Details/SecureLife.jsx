@@ -57,7 +57,7 @@ const SecureLife = () => {
 
         <div className="flex flex-wrap gap-4">
           <a
-            href="https://travel-mania-nayeem129.netlify.app/"
+            href="https://secure-life-2912.netlify.app/"
             target="_blank"
             className="bg-orange-600 text-black font-medium px-4 py-2 rounded"
           >
